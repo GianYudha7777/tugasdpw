@@ -5,32 +5,37 @@ require_once ('kelas/Manusia.php');
 // Objek 1: Andi Pratama
 $andi = new Manusia();
 $andi->setNama("Andi Pratama");
+$andi->setUmur(25); // Menambahkan umur untuk Andi
+
 
 // Objek 2: Budi Santoso
 $budi = new Manusia();
 $budi->setNama("Budi Santoso");
+$budi->setUmur(30); 
 
 // Objek 3: Identitas Anda (Sesuaikan dengan nama Anda sendiri)
 $saya = new Manusia();
-$saya->setNama("User"); // <--- Ganti dengan nama kamu
-$saya->setUmur(20);       // <--- Ganti dengan umur kamu
+$saya->setNama("Gian Yudha Pratama" . "<br>"); // <--- Ganti dengan nama kamu
+$saya->setUmur(19);       // <--- Ganti dengan umur kamu
 
 // --- MENAMPILKAN DATA ---
 
 // 1. Tampilkan nama Andi (dari template bawaan)
-echo "Nama Andi: " . $andi->getNama();
-echo "<br>";
+echo "Nama Andi: " . $andi->getNama() . "<br>";
+echo "Umur Andi: " . $andi->getUmur() . " tahun<br>";
+echo "Nik Andi: " . $andi->getNIK() . "<br> <br>";
 
 // 2. Tampilkan nama lengkap $budi
-echo "Nama Lengkap Budi: " . $budi->getNama();
-echo "<br>";
+echo "Nama Budi: " . $budi->getNama() . "<br>";
+echo "Umur Budi: " . $budi->getUmur() . " tahun<br>";
+echo "Nik Budi: " . $budi->getNIK() . "<br> <br>";
 
 // 3. Tampilkan identitas Anda sendiri dan Umur (Getter & Setter)
-echo "Identitas Saya: " . $saya->getNama() . " (Umur: " . $saya->getUmur() . " tahun)";
+echo "Identitas Saya: " . $saya->getNama() . " Umur: " . $saya->getUmur() . " tahun ";
 echo "<br>";
 
 // 4. Tampilkan NIK
-echo "Tampilan NIK: " . $saya->getNIK();
+echo "NIK: " . $saya->getNIK();
 echo "<br>";
 
 

@@ -4,7 +4,7 @@ class Manusia
 {
     // Deklarasi Variabel
     protected $name;
-    protected $nik = "123212131243243";
+    protected $nik = "253307055";
     protected $umur; // Menambahkan variabel umur
 
     public function getNama()
@@ -20,7 +20,7 @@ class Manusia
     // Mengubah dari private ke public agar bisa diakses di index.php
     public function getNIK()
     {
-        return "nik {" . $this->nik . "}";
+        return "[" . $this->nik . "]";
     }
 
     // Menambahkan fungsi setter untuk umur
